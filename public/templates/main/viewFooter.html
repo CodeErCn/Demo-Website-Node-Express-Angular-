@@ -1,0 +1,64 @@
+<section class="view-footer-background width-margin">
+    <div class="width-margin">
+        <ul class="view-top">
+            <li class="font-lora">Sign up for Savings</li>
+            <li>       
+                <input class="font-lora" type="text" placeholder="Your Email Address"/>
+                <input class="font-lora" type="submit" value="Continue"/>
+            </li>
+            <li class="font-lora">Call 1-877-923-4259</li>
+            <li>
+                <a href="#"><button class="font-lora">Find a Travel Professional</button></a>
+            </li>
+        </ul>
+        <hr class="width-margin"/>
+        
+        <section class="view-mid">
+            <div>
+                <h5>WHAT'S NEW</h5>
+                <p ng-repeat="data in main.viewfooterdatas().part1"><a href="{{data.links}}">{{data.description}}</a></p>
+                <hr class="mid-hr"/>
+                <a href="#">OUR COMPANY</a>
+                <p ng-repeat="data in main.viewfooterdatas().part2"><a href="#">{{data}}</a></p>
+            </div><!--
+            --><div>
+                <h5>PLAN A CRUISE</h5>
+                <p ng-repeat="data in main.viewfooterdatas().part3"><a href="#">{{data}}</a></p>
+                <hr class="mid-hr"/>
+                <a href="#">GET IN TOUCH</a>
+                <p ng-repeat="data in main.viewfooterdatas().part4"><a href="#">{{data}}</a></p>
+                <hr class="mid-hr"/>
+                <a href="#">FOR TRAVEL PROFESSIONALS</a>
+            </div><!--
+            --><div>
+                <h5>FOR BOOKED GUESTS</h5>
+                <p ng-repeat="data in main.viewfooterdatas().part5"><a href="#">{{data}}</a></p>
+                <hr class="mid-hr"/>
+                <a href="#">CULINARY COUNCIL</a>
+                <p ng-repeat="data in main.viewfooterdatas().part6"><a href="#">{{data}}</a></p>
+            </div><!--
+            --><div>
+                <h5>OFFERS & PROMOTIONS</h5>
+                <p ng-repeat="data in main.viewfooterdatas().part7"><a href="#">{{data}}</a></p>
+                <p ng-repeat="data in main.viewfooterdatas().part8"><a href="#"><img class="{{data.class}}" ng-src="{{data.address}}" alt="{{data.alt}}"/><span class="{{data.span}}">{{data.text}}</span></a></p>
+            </div>
+        </section>
+
+        <section class="view-bottom">
+            <a href="#"><img class="fb" src="images/10x10.png" alt="FaceBook"/></a>
+            <a href="#"><img class="g" src="images/10x10.png" alt="Google +"/></a>
+            <a href="#"><img class="tw" src="images/10x10.png" alt="Tweeter"/></a>
+            <a href="#"><img class="pin" src="images/10x10.png" alt="Pinterest"/></a>
+            <a href="#"><img class="yt" src="images/10x10.png" alt="YouTube"/></a>
+            <a href="#"><img class="rss" src="images/10x10.png" alt="RSS"/></a>
+            <a href="#"><img class="ig" src="images/10x10.png" alt="instergram"/></a>
+            <div class="search">
+                <input type="text" placeholder="Search"/><button><img src="images/10x10.png" alt="Search Magnifier"/></button>
+            </div>
+        </section>
+
+        <section class="view-footer">
+            <p>Demo of Holland America in Angular.js by Eric Chen | 2015</p>
+        </section>
+    </div>
+</section>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/DemoStyle.css"/>
+    <link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script> 
+  </head>
+  <body ng-app="hollandDemo">
+    <section class="view" ng-controller="mainCtrl as main">
+      <header>
+          <div class="wrapper top">
+            <a href="/"><img class="main-logo" src="images/10x10.png" alt="Holland Demo"/></a>
+            <nav>
+              <a href="#/">LOG IN</a>
+              <a href="#/">REGISTER</a>
+              <a href="#/">CHECK IN</a>
+              <a href="#/">FIND A TRAVEL PROFESSIONAL</a>
+              <span> 1-877-932-4259 </span>
+              <a href="#/">CHAT</a>
+              <a href="#/">CALL</a>
+              <select class="help">
+                <option>HELP</option>
+                <option>Ng option</option>
+              </select>
+            
+              <select>
+                <option>Language</option>
+                <option>Ng option</option>
+              </select>
+            </nav>
+          </div>
+          <hr/>
+          
+          <div class="wrapper">
+            <nav class="bottom">
+                <a href="#/" ng-click="main.selectTab(1)" ng-class="{active:main.isSelected(1)}"><span>Plan a Cruise</span></a>
+                <a href="#/specials" ng-click="main.selectTab(2)" ng-class="{active:main.isSelected(2)}"><span>Specials</span></a>
+                <a href="#/destinations" ng-click="main.selectTab(3)" ng-class="{active:main.isSelected(3)}"><span>Destinations</span></a>
+                <a href="#/excursions" ng-click="main.selectTab(4)" ng-class="{active:main.isSelected(4)}"><span>Excursions</span></a>
+                <a href="#/onboard" ng-click="main.selectTab(5)" ng-class="{active:main.isSelected(5)}"><span>Onboard our Ships</span></a>
+                <a href="#/new-to-cruise" ng-click="main.selectTab(6)" ng-class="{active:main.isSelected(6)}"><span>New to Cruising</span></a>
+                <a href="#/booked-guests" ng-click="main.selectTab(7)" ng-class="{active:main.isSelected(7)}"><span>For Booked Guests</span></a>
+            </nav>
+          </div>
+          <hr/>
+      </header>
+      
+      <div ng-view></div>
+      <div class="wrapper-small">
+        <view-footer></view-footer>
+      </div>
+      
+      <footer>
+        <nav class="wrapper">
+          <a href="#">Sign up for Special Offers</a>
+          <a href="#">Check In</a>
+          <a href="#">Find Cruises</a>
+          <a href="#">Mariner Society</a>
+        </nav>
+      </footer>
+    </section> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <script type="text/javascript" src="/javascripts/ngControllers/appController.js"></script>
+    <script type="text/javascript" src="/javascripts/ngServices/appFactory.js"></script>
+    <script type="text/javascript" src="/javascripts/ngDirectives/mainViewFooterDirective.js"></script>
+  </body>
+</html>

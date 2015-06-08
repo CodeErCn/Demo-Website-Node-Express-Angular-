@@ -1,0 +1,743 @@
+/******************************************
+RESET BROWSER DEFUALT STYLE SETTING
+*******************************************/
+    /**************************************************
+    Reset browser default margins and paddings to Zero*/
+    * {
+        margin: 0;
+        padding: 0;
+        /****************************************
+        Preset all the font family to sans-serif*/
+        font-family: sans-serif;
+    }
+
+    /*********************************************** 
+    Clear all hyperlink browser default properties */
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/******************************************
+INDEX VIEW, HEADER, FOOTER, AND WRAPPER
+*******************************************/
+    section.view {
+        width: 1425px;
+        margin: 0 auto;
+    }
+        header {
+            width: 1425px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        footer {
+            width: 1425px;
+            position: fixed;
+            bottom: 0;
+        }
+    
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .wrapper-small {
+        width: 66%;
+        margin: 0 auto;
+    }
+
+/******************************************
+DEVIDER <hr/> COLOR
+*******************************************/
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #293A7E; 
+    }
+
+/******************************************
+HEADER BACKGROUND
+*******************************************/
+    header {
+        background-color: #FFFFFF;
+    }
+
+/******************************************
+HEADER TOP LOGO & NAV 
+*******************************************/
+    header div.top {
+        padding: 1% 0 1.5%;
+    }
+        header div.top a {
+            display: inline-block;
+        }
+        
+        header div.top .main-logo {
+            background: url('../images/sprite.png') 0px -161px;
+            background-repeat: no-repeat;
+            width: 227px;
+            height: 50px;
+        }
+
+    header div.top nav {
+        width: 76%;
+        margin-top: 1.5%;
+        vertical-align: top;
+        display: inline-block;
+        font-size: 0.7em;
+        font-weight: bold;
+        color: #4E5A75;
+    }
+        header div.top nav a, div.top nav span{
+            margin-right: 1.49%;
+            padding: 5px 3px;
+        }
+
+        header div.top nav a:hover {
+            background-color: #4E5A75;
+            color:#FFFFFF;
+            text-decoration: none;
+        }
+
+    header div.top select {
+        background: transparent;
+        border: none;
+        font-size: 1em;
+        font-weight: bold;
+        color: #4E5A75;
+    }
+        header div.top select.help {
+            width: 8%;
+        }
+
+/******************************************
+HEADER BOTTOM NAV
+*******************************************/
+    header nav.bottom {
+        width: 100%;
+        padding: 1.5% 0;
+        font-size: 1em;
+        font-weight: bold;
+    }
+        header nav.bottom a {
+            margin-right: -0.7%;
+            padding: 1.5% 1px;
+            color: #293A7E;
+        } 
+            header nav.bottom a:first-child span {
+                border-left: none;
+            }
+            
+            header nav.bottom a:hover, header nav.bottom a.active {
+                background-color: #293A7E;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+        header nav.bottom span {
+            padding: 0 1.62%;
+            border-left: solid thin #293A7E;
+        }
+
+/******************************************
+MAIN NG-VIEW AND BACKGROUND IMAGE
+*******************************************/
+    img.image1 {
+        width: 1425px;
+        height: 100%;
+        background: url('../images/TripPlanning.jpg');
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 135px;
+        left: 0;
+        z-index: -1;
+    }
+
+    img.image2 {
+        width: 1425px;
+        height: 100%;
+        background: url('../images/koningsdam.jpg');
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 135px;
+        left: 0;
+        z-index: -1;
+    }
+
+    img.image3 {
+        width: 1425px;
+        height: 100%;
+        background: url('../images/eurodam.jpg');
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 135px;
+        left: 0;
+        z-index: -1;
+    }
+
+    div.all-view-background {
+        padding: 2%;
+        background-color: rgba(255,255,255,0.8);
+        color: #293A7E;
+    }
+
+/******************************************
+MAIN NG-VIEW (HOME.HTML)
+*******************************************/
+    section.plan {
+        margin-top: 38.1%;
+    }
+
+    div.plan-selects {
+        width: 70%;
+        margin-right: 5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+        div.plan-selects h1 {
+            width: 73%;
+            margin: 0 0 2% 2%;
+            font-family: 'lora', sans-serif;
+        }
+
+        div.plan-selects select {
+            height: 25px;
+            margin-right: 0.3%;
+            vertical-align: top;
+            background: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0px 2px 0px lightgray;
+            color: #293A7E;
+            font-size: 0.9em;
+        }
+            div.plan-selects select.des {
+                width: 35%;
+                margin-left: 4%;
+            }
+
+            div.plan-selects select.dat {
+                width: 18%;
+            }
+
+            div.plan-selects select.dur {
+                width: 18%;
+            }
+
+        div.plan-selects button {
+            height: 25px;
+            padding: 1% 7%;
+            vertical-align: top;
+            background-color: #293A7E;
+            border: none;
+            border-radius: 3px;
+            font-size: 0.9em;
+            color: #FFFFFF;
+        }
+        
+        div.plan-links {
+            margin-top: 3%;
+        }
+            div.plan-links a {
+                width: 24%;
+                margin: 0.5% 0;
+                display: block;
+            }
+        
+        section.plan img {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+/******************************************
+MAIN NG-VIEW (SPECIALS.HTML)
+*******************************************/
+    section.specials {
+        margin-top: 34.5%;
+    }
+        div.special-top-row {
+            width: 100%;
+            margin-bottom: 1%;
+        }
+            div.special-top-row a {
+                width: 12.5%;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            div.special-top-row a p {
+                width: 80%;
+                font-size: 0.6em;
+                font-weight: bold;
+            }
+
+            div.special-top-row img.alaska {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px 0px;
+            }
+
+            div.special-top-row img.asia {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -720px;
+            }
+
+            div.special-top-row img.anzsp {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -800px;
+            }
+
+            div.special-top-row img.bermuda {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -80px;
+            }
+
+            div.special-top-row img.canada {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -640px;
+            }
+
+            div.special-top-row img.carib {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -160px;
+            }
+
+            div.special-top-row img.europ {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -240px;
+            }
+
+            div.special-top-row img.gvoyages {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -1120px;
+            }
+
+        div.special-bottom-row {
+            width: 100%;
+        }
+            div.special-bottom-row a {
+                width: 12.5%;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            div.special-bottom-row a p {
+                width: 80%;
+                font-size: 0.6em;
+                font-weight: bold;
+            }
+
+            div.special-bottom-row img.hawaii {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -320px;
+            }
+
+            div.special-bottom-row img.holiday {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -1200px;
+            }
+
+            div.special-bottom-row img.mexico {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -560px;
+            }
+
+            div.special-bottom-row img.pnwpc {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -480px;
+            }
+
+            div.special-bottom-row img.panama {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -1040px;
+            }
+
+            div.special-bottom-row img.saa {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -880px;
+            }
+
+            div.special-bottom-row img.antarctica {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -960px;
+            }
+
+            div.special-bottom-row img {
+                width: 105px;
+                height: 80px;
+                background: url('../images/specials-sprite.png') 0px -1120px;
+            }
+
+/******************************************
+MAIN NG-VIEW (DESTINATIONS.HTML)
+*******************************************/
+    section.dest {
+        margin-top: 23.6%
+    }
+
+    div.dest-links, section.dest img{
+        display: inline-block;
+        vertical-align: top;
+    }
+        div.dest-links {
+            margin-right: 4%;
+        }
+    
+    div.dest-links-top {
+        margin-bottom: 11%;
+    }
+        div.dest-links-top a.bold {
+            margin-bottom: 5%;
+        }
+
+    div.dest-links-top a, div.dest-links-bottom a{
+        margin: 1%;
+        display: block;
+    }
+
+    div.dest-links-top a.bold, div.dest-links-bottom a{
+        font-weight: bold;
+    }
+
+/******************************************
+MAIN NG-VIEW (EXCURSIONS.HTML)
+*******************************************/
+    section.excur {
+        margin-top: 34.3%;
+    }
+        section.excur div.all-view-background {
+            padding: 2% 0;
+        }
+
+    section.excur img.excur-image {
+        width: 100%;
+    }
+
+/******************************************
+MAIN NG-VIEW (ONBOARD OUR SHIPS.HTML)
+*******************************************/
+    section.onboard {
+        margin-top: 24.3%;
+    }
+        section.onboard div.all-view-background {
+            padding: 2% 0;
+        }
+
+    section.onboard img.onboard-image {
+        width: 100%;
+    }
+
+/******************************************
+MAIN NG-VIEW (NEW TO CRUISING.HTML)
+*******************************************/
+    section.new-to-cruise {
+        margin-top: 34.3%;
+    }
+        section.new-to-cruise div.all-view-background {
+            padding: 2% 0;
+        }
+
+    section.new-to-cruise img.new-to-cruise-image {
+        width: 100%;
+    }
+
+/******************************************
+MAIN NG-VIEW (FOR BOOKED GUESTS.HTML)
+*******************************************/
+    section.for-booked {
+        margin-top: 39.3%;
+    }
+        section.for-booked div.all-view-background {
+            padding: 2% 0;
+        }
+
+    section.for-booked img.for-booked-image {
+        width: 100%;
+    }
+
+/******************************************
+FOOTER
+*******************************************/
+    footer nav.wrapper{
+        padding: 1% 0;
+        background-color: #293A7E;
+        text-align: center;
+        font-size: 1.1em;
+        color: white;
+    }
+
+    footer a {
+        margin-right: 14%;
+    }
+        footer a:hover {
+            text-decoration: none;
+        }
+
+    footer a:first-child {
+        margin-left: 3%
+    }
+
+    footer a:last-child {
+        margin-right: 3%;
+    }
+
+/******************************************
+VIEW FOOTER
+*******************************************/
+    section.view-footer-background {
+        width: 100%;
+        margin-bottom: 10%;
+        background-color: #E6ECF8;
+        color: #293A7E;
+    }
+
+    .width-margin {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .mid-hr {
+        width: 60%;
+    }
+
+    .font-lora {
+        font-family: 'Lora' sans-serif;
+        font-size: 1em;
+    }
+
+/******************************************
+VIEW FOOTER VIEW-TOP
+*******************************************/
+    ul.view-top {
+        margin-left: 2%;
+        list-style: none;
+    }
+        ul.view-top li {
+            padding: 3% 0 3.5%;
+            display: inline-block;
+            margin-right: 4.37%;
+        }
+
+        ul.view-top li:first-child {
+            margin-right: 2%
+        }
+
+        ul.view-top li:last-child {
+            width: 25%;
+            margin-right: 0;
+        }
+
+    /*****************
+    Email input field*/
+        ul.view-top li:nth-child(2){
+            width: 30%;
+        }
+        
+        ul.view-top input[type="text"] {
+            padding: 3% 5% 2% 3%; 
+            border: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 0.8em;
+        }
+        ul.view-top input[type="submit"] {
+            padding: 3% 8%;
+            margin-left: -2%;
+            background-color: #293A7E;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-size: 0.8em;
+            color: #FFFFFF;
+        }
+
+    /*********************************
+    Find a Travel Professional button*/
+    ul.view-top button {
+        padding: 2% 6%;
+        background-color: transparent;
+        border-radius: 5px;
+        border: none;
+        color:#293A7E;
+    }
+        ul.view-top button:hover {
+            background-color: #293A7E;
+            color: #FFFFFF;
+        }
+
+/******************************************
+VIEW FOOTER VIEW-MID
+*******************************************/
+    section.view-mid {
+        margin-top: 5%   
+    }
+        section.view-mid div {
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        section.view-mid h5 {
+            margin-bottom: 15%;
+        }
+
+        section.view-mid a {
+            width: 100%;
+            font-size: 0.9em;
+        }
+
+        section.view-mid hr {
+            margin: 5% 0;
+        }
+
+        section.view-mid p {
+            margin: 2% 0;
+            font-size: 0.9em;
+        }
+
+        section.view-mid img.holland-visa {
+            width: 80px;
+            height: 44px;
+            background: url('../images/sprite.png') 0px -613px;
+            display: inline-block;
+        }
+            section.view-mid span {
+                margin-left: 3%;
+                margin-top: 1%;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            section.view-mid span.ship {
+                margin-top: 3%;
+                vertical-align: top;
+            }
+
+            section.view-mid span.visa {
+                width: 55%;
+                margin-left: 0; 
+            }
+
+/******************************************
+VIEW FOOTER VIEW-BOTTOM
+*******************************************/
+    section.view-bottom {
+        margin: 5% 0;
+    }
+    
+    /******************
+    Social image icons*/
+    section.view-bottom img.fb {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -333px;
+    }
+        section.view-bottom img.fb:hover {
+            background: url('../images/sprite.png') -35px -333px;
+        }
+
+    section.view-bottom img.g {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -371px;
+    }
+        section.view-bottom img.g:hover {
+            background: url('../images/sprite.png') -35px -371px;
+        }
+
+    section.view-bottom img.tw {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -447px;
+    }
+        section.view-bottom img.tw:hover {
+            background: url('../images/sprite.png') -35px -447px;
+        }
+
+    section.view-bottom img.pin {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -409px;
+    }
+        section.view-bottom img.pin:hover {
+            background: url('../images/sprite.png') -35px -409px;
+        }
+
+    section.view-bottom img.yt {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -485px;
+    }
+        section.view-bottom img.yt:hover {
+            background: url('../images/sprite.png') -35px -485px;
+        }
+
+    section.view-bottom img.rss {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -295px;
+    }
+        section.view-bottom img.rss:hover {
+            background: url('../images/sprite.png') -35px -295px;
+        }
+
+    section.view-bottom img.ig {
+        width: 33px;
+        height: 33px;
+        background: url('../images/sprite.png') 0px -662px;
+    }
+        section.view-bottom img.ig:hover {
+            background: url('../images/sprite.png') -35px -662px;
+        }
+
+    /******************
+    Search input field*/
+    section.view-bottom div.search {
+        width: 50%;
+        padding: 0.6% 0 0 3%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    section.view-bottom input[type='text'] {
+        height: 16px;
+        width: 40%;
+        margin-right: 0.3%;
+        vertical-align: top;
+        border: solid 1px #293A7E;
+    }
+
+    section.view-bottom button {
+        vertical-align: top;
+        background: none;
+        border: none;
+    }
+        section.view-bottom div.search button img {
+            height: 16px;
+            width: 16px;
+            background: url('../images/sprite.png') -2px -250px;
+            border: solid 1px #293A7E;
+        }
+            section.view-bottom div.search button img:hover {
+                background: url('../images/sprite.png') -2px -273px;
+            }
